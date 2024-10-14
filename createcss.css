@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+:root{
+    --color:#00a79d ;
+    --background: linear-gradient(95deg,#00a79d 15%,#033531 45%,#00a79d 75%,#17f0e1 100%) 95%/200% 100%;
+     
+    
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 12px;
+}
+
+html::-webkit-scrollbar-track{
+    background: #444;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 15px;
+}
+
+body{
+    background-image: linear-gradient(to right, #000000, rgb(23, 23, 23),#222, #2d2c2c);
+}
+section{
+    padding:30px 9%;
+}
+
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:15px;
+}
+
+.about .row .image{
+    flex:1 1 450px;
+    padding:10px;
+}
+
+.about .row .image img{ 
+    width: 90%;
+    height: 700px;
+    border-radius: 5px;
+    border:1rem solid #333;
+}
+
+.about .row .content{
+    flex:1 1 450px;
+}
+
+.about .row .content h3{
+    font-size: 35px;
+    color:#fff;
+}
+
+
+.about .row .content .container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.container .form{
+    border-radius: 6px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.container .form .title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+
+}
+
+.form .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: var(--color);
+    border-radius: 25px;
+
+}
+
+.form .input-info{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    
+
+}
+.input-info input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    padding: 0 35px;
+    font-size: 16px;
+    transition: all 0.2s ease;
+
+}
+.input-info input:is(:focus,:valid){
+    border-bottom-color: var(--color);
+}
+.input-info i{
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+.input-info i.icon{
+    left: 0;
+
+}
+.input-info input:is(:focus,:valid)~i{
+    color: var(--color);}
+
+.input-info i.showHidePw{
+    right: 0;
+}
+
+.form .checkbox-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.checkbox-text.checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px 0 4px;
+    accent-color: var(--color);
+
+}
+
+.form .text{
+
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+.form a.text {
+    color: var(--color);
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+
+
+.form .button{
+    margin-top: 35px;
+}
+
+.form .button input{
+    background-color: var(--color);
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: var(--color);
+}
+
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+.input-info  textarea{
+   background-color: rgb(249, 249, 249);
+   width: 100%;
+    background:rgb(222, 221, 221);
+    border-radius: 5px;
+    padding:10px;
+    margin:7px 0;
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    text-transform: none;
+    resize: none;
+    border: 1px solid #00a79d;
+}
+ 
+.form a{
+    color: #00a79d;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    
+    top: 10;
+    right: 15px;
+    
+}

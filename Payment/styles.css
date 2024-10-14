@@ -1,0 +1,43 @@
+/* Container for the button */
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
+  /* Styling for the button */
+  .back-btn {
+    background-color: #00a79d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  
+  /* Hover effect */
+  .back-btn:hover {
+    background-color: #007d73; /* Darker background color on hover */
+  }
+  
+  /* Animation for the button */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .back-btn {
+    position: fixed;
+    animation: slideInFromRight 0.5s ease; /* Apply animation to the button */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+    top: 20px;
+    right: 20px;
+  }
+  
